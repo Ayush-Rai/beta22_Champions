@@ -87,6 +87,61 @@ function chatbotvoice(message){
     chatareamain.appendChild(showchatbotmsg(speech.text));
 }
 
+
+function chatbottext(message){
+    speech_text = "This is test message";
+    if(message.includes('start'||'I want to take a quiz'||'quiz')){
+        let finalresult = start[Math.floor(Math.random() * start.length)];
+        speech_text = finalresult;
+		
+    }
+	
+	if(message.includes('easy'||'simple')){
+        let finalresult = easy_ask[Math.floor(Math.random() * easy_ask.length)];
+        speech_text = finalresult;
+    }
+	
+	if(message.includes('tough'||'hard')){
+        let finalresult = tough_ask[Math.floor(Math.random() * tough_ask.length)];
+        speech_text = finalresult;
+    }
+	
+    if(message.includes('hi'||'hello')){
+        let finalresult = meet[Math.floor(Math.random() * meet.length)];
+        speech_text = finalresult;
+    }
+	if(message.includes('who are you')){
+        let finalresult = intro[Math.floor(Math.random() * intro.length)];
+        speech_text = finalresult;
+    }
+    if(message.includes('fine')){
+        let finalresult = help[Math.floor(Math.random() * help.length)];
+        speech_text = finalresult;
+    }
+    if(message.includes('how are you' || 'how are you doing today')){
+        let finalresult = greetings[Math.floor(Math.random() * greetings.length)];
+        speech_text = finalresult;
+    }
+    if(message.includes('tell me something about you' || 'tell me something about your hobbies')){
+        let finalresult = hobbies[Math.floor(Math.random() * hobbies.length)];
+        speech_text = finalresult;
+    }
+    if(message.includes('pizza')){
+        let finalresult = pizzas[Math.floor(Math.random() * pizzas.length)];
+        speech_text = finalresult;
+    }
+    if(message.includes('thank you' || 'thank you so much')){
+        let finalresult = thank[Math.floor(Math.random() * thank.length)];
+        speech_text = finalresult;
+    }
+    if(message.includes('talk to you' || 'talk')){
+        let finalresult = closing[Math.floor(Math.random() * closing.length)];
+        speech_text = finalresult;
+    }
+    chatareamain.appendChild(showchatbotmsg(speech_text));
+}
+
+
 recognition.onresult=function(e){
     let resultIndex = e.resultIndex;
     let transcript = e.results[resultIndex][0].transcript;
@@ -97,8 +152,17 @@ recognition.onresult=function(e){
 recognition.onend=function(){
     mic.style.background="#ff3b3b";
 }
+
 mic.addEventListener("click", function(){
     mic.style.background='#39c81f';
     recognition.start();
     console.log("Activated");
 })
+
+function myFunction(e) {
+  let transcript = document.getElementById("msg_text").value;
+  chatareamain.appendChild(showusermsg(transcript));
+  chatbottext(transcript);
+  console.log(transcript);
+  document.getElementById("msg_text").value = "newSubmitButtonValue";
+}
