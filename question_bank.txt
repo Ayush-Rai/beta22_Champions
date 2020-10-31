@@ -1,2 +1,3 @@
 Question	Answers	Difficulty
-Who is the Prime Minister of India?	Narendra Modi	Easy 
+Who is the Prime Minister of India?	Narendra Modi	Easy
+Who is the President of India?	Ramnath Kovind	Easy 
