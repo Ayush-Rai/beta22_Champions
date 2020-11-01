@@ -21,8 +21,8 @@ var cqi=0;
 var mqi=0;
 var oqi=0;
 var go=0;
-let ml=[];
-let cd=[];
+let ml=[]
+let cd=[]
 
 function showusermsg(usermsg){
     let output = '';
