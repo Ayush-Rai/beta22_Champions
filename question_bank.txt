@@ -1,3 +1,77 @@
-Question	Answers	Difficulty
-Who is the Prime Minister of India?	Narendra Modi	Easy
-Who is the President of India?	Ramnath Kovind	Easy 
+//////////////PYTHON Test/////////////
+
+let python = ["Which function removes the first element of a set and the last element of a list? \
+1 remove. 2 pop. 3 discard. 4 dispose.",
+ "Syntax error in python is detected by _________at _______ \
+  1. compiler/ compile time 2. interpreter/ run time 3. compiler/ run time 4. interpreter/ compile time",
+ "In which part of memory does the system stores the parameter and local variables of funtion call? \
+  1. heap 2. stack 3. Uninitialized data segment 4. None of the above",
+ "Is Python Object Oriented Programming language, True or False? ",
+ "What type of data is: arr = [(1,1),(2,2),(3,3)]?  \
+  1. Array of tuples 2. Tuples of lists 3. List of tuples 4. Invalid type",
+ "Can tuple be used as dictionary key in python? True or False?",
+ "Python is written in which language? \
+  1. C 2. C++ 3. Java 4. None of the above",
+ "What is the associativity of Operators with the same precedence? \
+  1. Depends on operators 2. Left to Right 3. Right to Left 4. Depends on Python Compiler",
+ "What is the maximum possible length of an identifier?\
+  1. 32 characters 2. 63 characters, 3. 79 characters, 4. None of the above",
+ "Given a function that does not return any value, what value is shown when executed at the shell? \
+  1. int 2. bool 3. void 4. None"]
+
+let python_ans = ["pop", "interpreter run time", "stack", "True", "List of tuples", "True", "C", "Left to Right", "None of the above", "None"]
+
+
+
+/////////////////Machine Learning//////////////
+
+
+let ml = ["Which of the following is a widely used and effective machine learning algorithm based on the idea of bagging? \
+1. Decision Tree 2. Classification 3. Regression 4. Random Forest",
+ "Which of the following techniques can not be used for normalization in text mining? \
+  1. Stemming 2. Lemmatization 3. Stop Word Removal 4. None of the above",
+ "Which is meant by assuming any two neighboring that are both edge pixels with consistent orientation? \
+  1. Canny edge detection 2. Smoothing 3. Segmentation 4. None of the above",
+ "Computers normally solve problem by breaking them down into a series of yes-or-no decisions represented by 1s and 0s. What is the name of the logic that allows computers to assign numerical values that fail somewhere between 0 and 1? \
+  1. Human logic 2. Fuzzy logic 3. Boolean logic 4. Operational logic",
+ "Watson wants to know which of the following is NOT supervised learning, what does Sherlock tell him?  \
+  1. Principal component analysis 2. Decision Tree 3. Linear Regression 4. Naive bayes",
+ "K-means is not deterministic and it also consists of number of iterations. True or False?",
+ "The input image has been converted into a matrix of size 28 X 28 and a kernel/filter of size 7 X 7 with a stride of 1. What will be the size of the convoluted matrix? \
+  1. 22 X 22 2. 21 X 21 3. 28 X 28 4. 7 X 7",
+ "Which of the following functions can be used as an activation function in the output layer if we wish to predict the probabilities of n classes (p1, p2..pk) such that sum of p over all n equals to 1? \
+  1. Softmax 2. ReLu 3. Sigmoid 4. Tanh",
+ "In NLP, which algorithm decreases the weight for commonly used words and increases the weight for words that are not used very much in a collection of documents?\
+  1. Term Frequency (TF) 2. Inverse Document Frequency (IDF), 3. Word2Vec, 4. Latent Dirichlet Allocation (LDA)",
+ "In text mining, converting text into tokens and then converting them into an integer or floating-point vectors can be done using \
+  1. CountVectorizer 2. TF-IDF 3. Bag of Words 4. NERs"]
+
+let ml_ans = ["Random Forest", "Stop Word Removal", "Canny edge detection", "Fuzzy logic", "Principal component analysis", "True", "22 cross 22", "Softmax", "Inverse Document Frequency", "Count Vectorizer"]
+
+
+///////////////////////////////////Operating System///////////////////
+
+
+let os = ["Which system program combines the separately compiled modules of a program into a form suitable for execution? \
+1. Assembler 2. Linking Loader 3. Cross Compiler 4. Load and Go",
+ "Select the scheduling technique which allows processes that are logically runnable to be temporarily suspended \
+  1. Non Preemptive 2. Preemptive 3. First come first Serve 4. Shortest Job First",
+ "If Albus Dumbledore wants to create a new process in UNIX which spell would he use? \
+  1. create 2. fork 3. new 4. exec",
+ "Sherlock is solving the Scandal in Bohemia, which is the Deadlock avoidance algorithm he has to use to get the passkey from Irene Adler? \
+  1. Round-Robin 2. Bankers 3. Elevators 4. Karns",
+ "Oswald wants the address of the next instruction to be executed by the current process, what correct answer does Weenie give him? \
+  1. CPU registers 2. Process stack 3. Pipe 4. Program counter",
+ "Which routing technique is used in a distributed system? \
+  1. Fixed Routing 2. Virtual Routing 3. Dynamic Routing 4. All of the above",
+ "Which of the following page replacement algorithms suffers from Belady’s Anomaly? \
+  1. Optimal replacement 2. Least Recently Used 3. First in First out 4. Both 1 and 3",
+ "In which load balancing technique in SMP the Idle processor takes a waiting task to execute from a busy processor? \
+  1. Get Migration 2. Post Migration 3. Push Migration 4. Pull Migration",
+ "Which Operating Sysem follows a Modular + Monolithic OS Architecture?\
+  1. Solaris 2. Windows, 3. Android, 4. Linux",
+ "Which module gives control of the CPU to the process selected by the short-term scheduler? \
+  1. Dispatcher 2. Loader 3. Linker 4. Timer"]
+
+let os_ans = ["Assembler", "Non Preemptive", "fork", "Bankers", "Program Counter", "All of the above", "First in First out", "Pull Migration", "Solaris", "Dispatcher"]
+
